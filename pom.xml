@@ -41,11 +41,21 @@
              <groupId>com.xyonix.external</groupId>
              <artifactId>wordnet-rita</artifactId>
              <version>0.0.1</version>
+             <systemPath>external/lib/ritaWN.jar</systemPath>
         </dependency>
+        <dependency>
+		    <groupId>com.xyonix.external</groupId>
+		    <artifactId>wordnet-rita</artifactId>
+		    <version>0.0.1</version>
+		    <scope>system</scope>
+		    <systemPath>${project.basedir}/external/lib/ritaWN.jar</systemPath>
+		</dependency>
         <dependency>
              <groupId>com.xyonix.external</groupId>
              <artifactId>wordnet-rita-support</artifactId>
              <version>0.0.1</version>
+             <scope>system</scope>
+		    <systemPath>${project.basedir}/external/lib/supportWN.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>net.sf.jwordnet</groupId>
