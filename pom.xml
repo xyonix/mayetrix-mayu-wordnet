@@ -58,6 +58,16 @@
             <version>1.0.5</version>
         </dependency>
     </dependencies>
+    <repositories>
+	     <repository>
+	        <id>xyonix-snapshot</id>
+	        <url>https://s3-us-west-2.amazonaws.com/com.xyonix.repo/snapshot</url>
+	     </repository>
+	        <repository>
+	        <id>xyonix-release</id>
+	        <url>https://s3-us-west-2.amazonaws.com/com.xyonix.repo/release</url>
+	     </repository>
+  	</repositories>
     <build>
 		<extensions>
 			<extension>
@@ -92,14 +102,14 @@
             </plugin>
         </plugins>
     </build>
-    <repositories>
-	     <repository>
+	<distributionManagement>
+	    <snapshotRepository>
 	        <id>xyonix-snapshot</id>
-	        <url>https://s3-us-west-2.amazonaws.com/com.xyonix.repo/snapshot</url>
-	     </repository>
-	        <repository>
+	        <url>s3://com.xyonix.repo/snapshot</url>
+	    </snapshotRepository>
+	    <repository>
 	        <id>xyonix-release</id>
-	        <url>https://s3-us-west-2.amazonaws.com/com.xyonix.repo/release</url>
-	     </repository>
-  	</repositories>
+	        <url>s3://com.xyonix.repo/release</url>
+	    </repository>
+	</distributionManagement>
 </project>
