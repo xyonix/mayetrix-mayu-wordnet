@@ -4,7 +4,7 @@
     <groupId>com.xyonix.mayetrix.mayu</groupId>
     <artifactId>mayetrix-mayu-wordnet</artifactId>
     <packaging>jar</packaging>
-    <version>1.0.0</version>
+    <version>1.0.1-SNAPSHOT</version>
     <name>mayu-wordnet</name>
     <url>http://maven.apache.org</url>
     <licenses>
